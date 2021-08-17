@@ -1,1 +1,562 @@
+/* 去掉所有默认的边距 */
+*{
+    margin:0;
+    padding:0;
+}
+/* 去掉所有的列表小圆点 */
+ol, ul{
+    list-style:none;
+}
+/* 去掉所有链接的下划线 */
+a{
+    text-decoration:none;
+}
+/* 使用继承性设置字体 */
+body{
+    font:normal 14px/25px "微软雅黑";
+}
+header .header-top{
+    width: 1201px;
+    margin:0 auto;
+    /* 清除浮动减少重叠 */
+    overflow:hidden;
+}
+header .header-top .logo{
+    padding-top:27px;
+    width:221px;
+    height:63px;
+    float:left;
+}
+header .header-top .logo h1{
+    width: 221px;
+    height:63px;
+    color:#00978E;
+    position:relative;
+    top:27.5px;
+    font-weight:normal;
+    font-size:50px;
+}
+header .header-top .tools{
+    float:right;
+    height:77px;
+    width:266px;
+    padding-top:22px;
 
+}
+header .header-top .tools .r1{
+     margin-bottom:15px;
+}
+header .header-top .tools .r1 .tel{
+    width:32px;
+    height:25px;
+}
+header .header-top .tools .r1 .telnum{
+    font-size:20px;
+    color:#00978E;
+    display:inline-block;
+    width:158px;
+    height:26px;
+    text-align:center;
+    position:relative;
+    bottom:3.5px;
+    left:4px;
+}
+header .header-top .tools .r1 .icon{
+    width:24px;
+    height:24px;
+}
+header .header-top .tools .r1 .chinese_icon{
+    margin-right:14.1px;
+}
+header .header-top .tools .r2{
+    width:264px;
+    height:28px;
+    border:1px solid #efefef;
+    border-radius:2%;
+}
+header .header-top .tools .r2 input{
+    border:none;
+    width:224px;
+    height:28px;
+    padding-left:20px;
+    float:left;
+    outline:none;
+}
+header .header-top .tools .r2 button{
+    width:20px;
+    height:20px;
+    float: left;
+    background:none;
+    border: none;
+    outline:none;
+    cursor:pointer;
+    position:relative;
+    top:4px;
+    right:5px;
+}
+header .main-nav{
+    background-color:#00978E;
+    /* 不用写宽度，自动撑满 */
+    height:60px;
+    margin-top:29px;
+}
+header .main-nav ul{
+    width:1200px;
+    height:60px;
+    margin:0 auto;
+}
+header .main-nav ul li{
+    float:left;
+    width:150px;
+    text-align:center;
+    /* 字体垂直居中，行高等于盒子高 */
+    line-height:60px;
+    
+}
+header .main-nav ul li,a{
+    font-size: 16px;
+    color:#fff;
+    cursor:pointer;
+}
+header .main-nav ul li a{
+    display:block;
+    width:150px;
+    height:60px;
+}
+header .main-nav ul a:hover{
+    background-color:#015E58;
+}
+
+
+.banner .banner-img{
+    width:100%;
+}
+.banner{
+    width:100%;
+    position:relative;
+}
+.banner .center{
+    /* 设置版心 */
+    position:absolute;
+    width:1200px;
+    height:300px;
+    top:50%;
+    left:50%;
+    margin-top:-150px;
+    margin-left:-600px;  
+}
+.banner h2{
+    font-size:60px;
+    font-weight:normal;
+    color:#015E58;
+    position:absolute;
+    width:480px;
+    height:79px;
+    top:60px;
+    left:148px;
+}
+.banner .center .left-btn{
+    position:absolute;
+    width:56px;
+    height:64px;
+    top:50%;
+    left:0;
+    margin-top:-32px;
+    background-color: rgb(0,0,0,.3);
+    text-align:center;
+    line-height:64px;
+    font-size: 45px;
+    cursor:pointer;
+}
+.banner .center .right-btn{
+    position:absolute;
+    width:56px;
+    height:64px;
+    top:50%;
+    right:0;
+    margin-top:-32px;
+    background-color: rgb(0,0,0,.3);
+    text-align:center;
+    line-height:64px;
+    font-size: 45px;
+    cursor:pointer;
+}
+.banner ol{
+    position:absolute;
+    width:120px;
+    height:12px;
+    bottom:20px;
+    /* 绝对定位水平居中的图片圆点 */
+    left:50%;
+    margin-left:-60px;
+}
+.banner ol li{
+    float:left;
+    border-radius:25%;
+    width:20px;
+    height:12px;
+    background-color:white;
+    margin-right:10px;
+}
+/* 最后一个没有踹 */
+.banner ol li:last-child{
+    margin-right:0;
+}
+.banner ol li.cur{
+    width:30px;
+    height:12px;
+    background-color: teal;
+}
+
+
+.main-content{
+    padding-top:71.3px;
+}
+.main-content .useful-links{
+    width:906px;
+    height:147.7px;
+    margin:0 auto;
+
+}
+.main-content .useful-links ul{
+    overflow:hidden;
+}
+.main-content .useful-links ul li{
+    float: left;
+    margin-right:54px;
+}
+.main-content .useful-links ul li:last-child{
+    margin-right:0;
+}
+.main-content .useful-links ul li span{
+    display:block;
+    text-align: center;
+    color:black;
+    font-size:20px;
+    line-height:2.5;
+}
+
+
+.news-and-notice{
+    width:1200px;
+    height:376px;
+    margin:0 auto;
+    margin-top:56px;
+}
+.news-and-notice .news{
+    width:877px;
+    height:376px;
+    float: left;
+}
+.news-and-notice .news h3{
+    width:64px;
+    height:20px;
+    font-size:16px;
+    margin-bottom:27px;
+    padding-left:6px;
+    border-left:8px solid #00978E;
+}
+.news-and-notice .news-content .hot-news{
+    position: relative;
+    width:422px;
+    height:328px;
+    float:left;
+    margin-right:15px;
+}
+.news-and-notice .news-content .hot-news .title{
+    position:absolute;
+    width:100%;
+    height:40px;
+    top:288px;
+    background-color:rgb(8,8,8,.4);
+    text-align: center;
+    line-height:40px;
+}
+.news-and-notice .news-content .news-list ul{
+    float:left;
+    width:440px;
+    height:329px;
+}
+.news-and-notice .news-content .news-list ul li{
+    width: 440px;
+    height:40px;
+    margin:2px 0;
+    line-height:40px;
+}
+.news-and-notice .news-content .news-list ul li:first-child{
+    margin-top:0;
+}
+.news-and-notice .news-content .news-list ul li:last-child{
+    margin-bottom: 0;
+}
+.news-and-notice .news-content .news-list ul a{
+    color: #000;
+}
+.news-and-notice .news-content .news-list ul a:hover{
+    color:#00978E;
+    font-weight:bolder;
+}
+.news-and-notice .news-content .news-list ul span{
+    float: right;
+    margin-right:40px;
+}
+.news-and-notice .notice{
+    width:323px;
+    height:376px;
+    float:left;
+}
+.news-and-notice .notice h3{
+    width:64px;
+    height:20px;
+    font-size:16px;
+    margin-bottom:16px;
+    padding-left:6px;
+    border-left:8px solid #00978E;
+}
+.news-and-notice .notice ol li{
+    overflow:hidden;
+}
+.news-and-notice .notice ol li .number{
+    width:53px;
+    height:57px;
+    background-color:#00978E;
+    color:#fff;
+    font-size:30px;
+    text-align: center;
+    line-height:57px;
+    float:left;
+    margin-right:16px;
+    margin-bottom:14px;
+}
+.news-and-notice .notice ol li dl dt a{
+    color: #000;
+}
+.news-and-notice .notice ol li dl dd a{
+    color: rgb(165, 163, 163);
+}
+.news-and-notice .notice ol li dl a:hover{
+    color:#00978E;
+    font-weight:bolder;
+}
+aside{
+    width:1200px;
+    margin:20px auto 28px;
+}
+
+
+.dep{
+    width:100%;
+    height:437px;
+    background-color: #FAFAFA ;
+}
+.dep-info{
+    width:1200px;
+    height:437px;
+    margin:0 auto;
+}
+.dep-info .dep-top{
+    width: 100%;
+    height:21px;
+    padding-top:36.3px;
+    padding-bottom:16.7px;
+}
+.dep-info h3{
+    width:64px;
+    height:21px;
+    font-size:16px;
+    border-left:8px solid #00978E;
+    padding-left:6px;
+    float:left;
+}
+.dep-info .more{
+    color:#999999;
+    float:right;
+}
+.dep-info .dep-content{
+    float:left;
+    overflow:hidden;
+    width:265px;
+    padding-left: 35px;
+    height:355px;
+    position:relative;
+}
+.dep-content h4{
+    text-align:center;
+    margin-bottom:18px;
+    margin-top:20px;
+    position: relative;
+}
+.dep-content h4::before{
+    content:"";
+    position: absolute;
+    width:40px;
+    height:2px;
+    background-color:#00978E;
+    left: 67px;
+    top:12px;
+}
+.dep-content h4::after{
+    content:"";
+    position: absolute;
+    width:40px;
+    height:2px;
+    background-color:#00978E;
+    left:162px;
+    top:12px;
+}
+.dep-info .dep-content ul{
+    float:left;
+    overflow:hidden;
+}
+.dep-info .dep-content ul li{
+    width:119px;
+    height:34px;
+    float:left;
+    border:1px solid #AAA9A9;
+    border-radius:5%;
+    text-align:center;
+    line-height:34px;
+    margin-right:21px;
+    margin-bottom:24px;
+}
+.dep-info .dep-content ul li:nth-child(2n){
+    margin-right:0;
+}
+.dep-info .dep-content ul li a{
+    color:#000;   
+}
+.dep-info .dep-content ul li a:hover{
+    color:#00978E;
+    font-weight:bolder; 
+}
+
+
+.exp-info{
+    width:1200px;
+    margin:0 auto;
+}
+.exp-info .exp-top{
+    width:100%;
+    height: 21.1px;
+    padding-bottom:19.6px;
+    padding-top:19.6px;
+}
+.exp-info .exp-top h3{
+    width:65px;
+    height:21px;
+    font-size:16px;
+    border-left:8.1px solid #00978E;
+    padding-left:6.1px;
+    float:left;
+}
+.exp-info .more{
+    color:#999999;
+    float:right;
+}
+.exp-info ul{
+   overflow:hidden;
+}
+.exp-info ul li{
+    float:left;
+    width:400px;
+    height:240px; 
+}
+.exp-info ul li .picbox{
+    float:left;
+    width:152px;
+}
+.exp-info ul li .wordbox{
+    float:left;
+    width:220px;
+    padding-left:10px;
+    color:#333;
+    line-height:27px;
+}
+
+
+footer{
+    width:100%;
+    height:395px;
+    background-color:#FAFAFA;
+}
+footer .friend-links{
+    width:1200px;
+    height:96px;
+    margin:0 auto;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+footer .friend-links h3{
+    font-size:20px;
+}
+footer .friend-links ul{
+    overflow:hidden;
+}
+footer .friend-links ul li{
+    width:64px;
+    height:21px;
+    float:left;
+    margin-right:100px;
+    margin-top:20px;
+}
+footer .friend-links ul li:last-child{
+    margin-right:0;
+}
+footer .friend-links ul li:first-child{
+    margin-left:45px;
+}
+footer .friend-links ul li a{
+    color: #333;
+    font-size:16px;
+}
+footer .friend-links ul li a:hover{
+    color: #00978E;
+    font-weight:bolder;
+}
+footer address{
+    width:1200px;
+    height:112px;
+    margin:0 auto;
+    font-style:normal;
+}
+footer address h3{
+    font-size:20px;
+    margin-bottom:18px;
+}
+footer address ul{
+    width:665px;
+    overflow:hidden;
+    margin-left:45px;
+}
+footer address ul li{
+    float:left;
+    height:24px;
+    font-size:16px;
+    margin-bottom:20px;
+}
+footer address ul li a{
+    color:rgba(135, 7, 255);
+}
+footer address ul li a:hover{
+    color:#00978E;
+}
+footer address ul li:first-child{
+    margin-right:33px;
+}
+footer address ul li:nth-child(2){
+    margin-right:79px;
+}
+footer address ul li:nth-child(3){
+    margin-bottom:0;
+}
+footer address ul li:nth-child(4){
+    margin-right:133px;
+    margin-bottom:0;
+}
+footer address ul li:nth-child(5){
+    margin-right:55px;
+    margin-bottom:0;
+}
+footer address ul li:nth-child(6){
+    margin-bottom:0;
+}
